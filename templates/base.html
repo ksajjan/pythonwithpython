@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 	{% block Title %}
+  	<title>Learning With Python</title>
+  	<meta name="description" content="Python Machine learning and Data anlysis Library">
+  	<meta name="keywords" content="Python data analysis example, Machine learning with Python, supervised learning, Twitter data analysis">
+  	<meta name="author" content="Sajjan Kumar">
+  	{% endblock %}
+
+  	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  	<link rel="stylesheet" href="{{ url_for('static', filename='css/navbar-fixed-top.css') }}">
+  	
+  	<link rel="stylesheet" href="{{ url_for('static', filename='css/sticky-footer-navbar.css') }}">
+  	{%block css %}
+
+  	{% endblock %}
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+
+  	
+</head>
+
+<body>
+
+	<!-- fixed Navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false" aria-controls="navbar">
+         
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="#">LearningWithPython.com</a>
+
+        </div>
+        <div id="mynavbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="{{ url_for('TodayILearn') }}">TodayILearn</a></li>
+            <li><a href="{{ url_for('LearnWithPython') }}">LearnWithPython</a></li>
+            <li><a href="#contact">Bookshelf</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+	</nav>
+
+	<div class="container">
+	{% block blogpost %}
+			<div clas="col-xs-12 col-sm-9">
+				<div class="row">
+					<div class="col-xs-6 col-lg-4">
+						<h2> Heading</h2>
+						<p>
+							We study the question of feature sets for robust visual ob-
+							ject recognition, adopting linear SVM based human detec-
+							tion as a test case. After reviewing existing edge and gra-
+							dient based descriptors, we show experimentally that grids
+							of Histograms of Oriented Gradient (HOG) descriptors sig-
+							nificantly outperform existing feature sets for human detec-
+							tion. We study the influence of each stage of the computation
+							on performance, concluding that fine-scale gradients, fine
+							orientation binning, relatively coarse spatial binning, and
+							high-qualitylocal contrast normalization in overlapping de-
+							scriptor blocks are all important for good results. The new
+							approach gives near-perfect separation on the original MIT
+							pedestrian database, so we introduce a more challenging
+							dataset containing over 1800 annotated human images with
+							a large range of pose variations and backgrounds.
+						</p>
+						
+					</div>
+					<div class="col-xs-6 col-lg-4">
+						<h2> Heading</h2>
+						<p>
+							We study the question of feature sets for robust visual ob-
+							ject recognition, adopting linear SVM based human detec-
+							tion as a test case. After reviewing existing edge and gra-
+							dient based descriptors, we show experimentally that grids
+							of Histograms of Oriented Gradient (HOG) descriptors sig-
+							nificantly outperform existing feature sets for human detec-
+							tion. We study the influence of each stage of the computation
+							on performance, concluding that fine-scale gradients, fine
+							orientation binning, relatively coarse spatial binning, and
+							high-qualitylocal contrast normalization in overlapping de-
+							scriptor blocks are all important for good results. The new
+							approach gives near-perfect separation on the original MIT
+							pedestrian database, so we introduce a more challenging
+							dataset containing over 1800 annotated human images with
+							a large range of pose variations and backgrounds.
+						</p>
+						
+					</div>
+					<div class="col-xs-6 col-lg-4">
+						<h2> Heading</h2>
+						<p>
+							We study the question of feature sets for robust visual ob-
+							ject recognition, adopting linear SVM based human detec-
+							tion as a test case. After reviewing existing edge and gra-
+							dient based descriptors, we show experimentally that grids
+							of Histograms of Oriented Gradient (HOG) descriptors sig-
+							nificantly outperform existing feature sets for human detec-
+							tion. We study the influence of each stage of the computation
+							on performance, concluding that fine-scale gradients, fine
+							orientation binning, relatively coarse spatial binning, and
+							high-qualitylocal contrast normalization in overlapping de-
+							scriptor blocks are all important for good results. The new
+							approach gives near-perfect separation on the original MIT
+							pedestrian database, so we introduce a more challenging
+							dataset containing over 1800 annotated human images with
+							a large range of pose variations and backgrounds.
+						</p>
+						
+					</div>
+					<div class="col-xs-6 col-lg-4">
+						<h2> Heading</h2>
+						<p>
+							We study the question of feature sets for robust visual ob-
+							ject recognition, adopting linear SVM based human detec-
+							tion as a test case. After reviewing existing edge and gra-
+							dient based descriptors, we show experimentally that grids
+							of Histograms of Oriented Gradient (HOG) descriptors sig-
+							nificantly outperform existing feature sets for human detec-
+							tion. We study the influence of each stage of the computation
+							on performance, concluding that fine-scale gradients, fine
+							orientation binning, relatively coarse spatial binning, and
+							high-qualitylocal contrast normalization in overlapping de-
+							scriptor blocks are all important for good results. The new
+							approach gives near-perfect separation on the original MIT
+							pedestrian database, so we introduce a more challenging
+							dataset containing over 1800 annotated human images with
+							a large range of pose variations and backgrounds.
+						</p>
+						
+					</div>
+					<div class="col-xs-6 col-lg-4">
+						<h2> Heading</h2>
+						<p>
+							We study the question of feature sets for robust visual ob-
+							ject recognition, adopting linear SVM based human detec-
+							tion as a test case. After reviewing existing edge and gra-
+							dient based descriptors, we show experimentally that grids
+							of Histograms of Oriented Gradient (HOG) descriptors sig-
+							nificantly outperform existing feature sets for human detec-
+							tion. We study the influence of each stage of the computation
+							on performance, concluding that fine-scale gradients, fine
+							orientation binning, relatively coarse spatial binning, and
+							high-qualitylocal contrast normalization in overlapping de-
+							scriptor blocks are all important for good results. The new
+							approach gives near-perfect separation on the original MIT
+							pedestrian database, so we introduce a more challenging
+							dataset containing over 1800 annotated human images with
+							a large range of pose variations and backgrounds.
+						</p>
+						
+					</div>
+					<div class="col-xs-6 col-lg-4">
+						<h2> Heading</h2>
+						<p>
+							We study the question of feature sets for robust visual ob-
+							ject recognition, adopting linear SVM based human detec-
+							tion as a test case. After reviewing existing edge and gra-
+							dient based descriptors, we show experimentally that grids
+							of Histograms of Oriented Gradient (HOG) descriptors sig-
+							nificantly outperform existing feature sets for human detec-
+							tion. We study the influence of each stage of the computation
+							on performance, concluding that fine-scale gradients, fine
+							orientation binning, relatively coarse spatial binning, and
+							high-qualitylocal contrast normalization in overlapping de-
+							scriptor blocks are all important for good results. The new
+							approach gives near-perfect separation on the original MIT
+							pedestrian database, so we introduce a more challenging
+							dataset containing over 1800 annotated human images with
+							a large range of pose variations and backgrounds.
+						</p>
+						
+					</div>
+					
+				</div> <!-- row -->
+
+		
+		
+			</div> <!--col-xs-12 col-sm-9 -->
+		{% endblock %}
+	</div> <!-- .container -->
+
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+body {
+	overflow-y : scroll;
+}
+
+div#disqus_thread {
+    padding: 50px 100px 50px 100px;
+}

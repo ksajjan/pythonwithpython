@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block Title %}
+	<title> Learning With Python </title>
+{% endblock %}
+
+{% block blogpost %}
+	<div class="container">
+		<div class="row">
+		<!--Tags=['Pandas','Numpy','Configuration','Machine Learning','SkLearn','Case Study'] 
+		Tags=[]
+			{% for post in posts %}
+				Tags.append({{ post.Tag }})
+
+			
+			{% endfor %}
+		used=[]
+		unique_tag= [x for x in Tags if x not in used and (used.append(x) or True )]
+		-->
+		{% for tag in unique_tags %}
+			{% for post in posts %}
+				{% if tag in  post.Tag  %}
+					<div class="col-xs-6 col-lg-4">
+					<h2>{{ tag }}</a></h2>
+						<a href="{{ url_for('LearnWithPython_post', name=post.path.replace('LearnWithPython/', '')) }}">{{ post.title }}</a>
+					</div>
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
+		<!--
+			{% for post in posts %}
+
+
+				{% for i in range(1,3) %}
+
+				
+
+				{% endfor %}
+				
+
+				
+    		{% endfor %}
+    	-->
+    	</div>
+    </div>
+
+
+{% endblock %}
+
+<!--
+<div class="col-xs-6 col-lg-4">
+
+				</div>
+
+				<div class="col-xs-6 col-lg-4">
+
+				</div>
+
+				<div class="col-xs-6 col-lg-4">
+
+				</div>
+
+			-->

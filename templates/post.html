@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block Title %}
+	<title> {{post.title }} - Sajjan's Blog </title>
+	<meta name="description" content="{{post.description}}">
+	<meta name="keywords" content="{{post.keywords}}">
+	<meta name="author" content="{{post.author}}" >
+	
+{% endblock %}
+
+{% block css %}
+  
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/blog_post.css') }} ">
+
+{% endblock %}
+
+<!--
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }} ">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/sticky-footer-navbar.css') }}">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  </script>
+
+-->
+
+{%block blogpost %}
+
+	<div class="single_blog_post">
+		<h2 class="post_heading"> {{post.title}}  </h2>
+		<p class="post_description">
+			{{post.html|safe}}
+		</p>
+		<small class="post_date">Published On : {{post.date}}</small>
+
+		<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+	
+		<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+		<script type="IN/Share"></script>
+
+
+		
+	</div>
+
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+//this.page.url = ;   Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = '/posts/{{post.title }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = '//sajjan-xyz.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+{% endblock %}

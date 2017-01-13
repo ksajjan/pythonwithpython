@@ -1,0 +1,25 @@
+h2.post_heading {
+	
+}
+
+small.post_date{
+	margin: 20px;
+}
+div.single_blog_post {
+	padding: 10px 50px 10px 50px;
+	margin:10px 50px 10px 50px;
+	
+}
+
+p.post_description {
+	padding: 10px 50px 10px 50px;
+	
+}
+
+@media (device-width: 360px)  {
+
+img { 
+	max-width: 100%;
+	height: auto;
+ }
+}
