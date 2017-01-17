@@ -1,6 +1,6 @@
 title: Advance NumPy Part-I  
 date: 2016-12-15
-Tag: ['Numpy','Numpy']
+Tag: 'Numpy'
 description : NumPy stands for Numerical Python which provides a vast type of methods to deal with data. Some advance method used in Numpy are..
 keywords : Advance NumPy, NumPy Broadcasting, array broadcasting, Numpy reshape(), NumPy newaxis(), C Versus Fortan Order Python, Python ravel() or flatten(),Concatenating and Splitting Arrays, array repetition, Broadcasting Rule 
 author : Sajjan Kumar

@@ -1,0 +1,37 @@
+.navbar-default {
+	background-color: #191919;
+}
+
+
+.navbar-default .navbar-nav>li>a {
+	color: #FFFFFF;
+}
+
+.navbar-default .navbar-brand {
+	color: #FFFFFF;
+}
+
+ a {
+	color :#0a0a0a;	
+}
+
+.footer {
+	/*
+	background-color: #A8CD1B;
+	*/
+	background-color: #FFF056;
+}
+.text-muted {
+	color: #191919
+}
+
+body {
+	background-color: #FFFFFF;
+
+}
+
+body > .container {
+	/* color is used for text color */
+    color: #0f0d0d; 
+    background-color: #DFE2DB;
+}

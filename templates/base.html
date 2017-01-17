@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{ url_for('static', filename='img/pythonicon.ico') }}">
  	{% block Title %}
   	<title>Learning With Python</title>
   	<meta name="description" content="Python Machine learning and Data anlysis Library">
@@ -13,7 +14,7 @@
 
   	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
   	<link rel="stylesheet" href="{{ url_for('static', filename='css/navbar-fixed-top.css') }}">
-  	
+  	<link rel="stylesheet" href="{{ url_for('static', filename='css/color.css') }}">
   	<link rel="stylesheet" href="{{ url_for('static', filename='css/sticky-footer-navbar.css') }}">
   	{%block css %}
 
@@ -21,6 +22,16 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
   </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90378006-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
   	
 </head>
@@ -38,15 +49,15 @@
             <span class="icon-bar"></span>
           </button>
 
-          <a class="navbar-brand" href="#">LearningWithPython.com</a>
+          <a class="navbar-brand" href="{{ url_for('home') }}">LearningWithPython.com</a>
 
         </div>
         <div id="mynavbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav navbar-right">
             <li><a href="{{ url_for('TodayILearn') }}">TodayILearn</a></li>
             <li><a href="{{ url_for('LearnWithPython') }}">LearnWithPython</a></li>
-            <li><a href="#contact">Bookshelf</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="{{ url_for('bookshelf') }}">bookshelf</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -54,147 +65,41 @@
 
 	<div class="container">
 	{% block blogpost %}
-			<div clas="col-xs-12 col-sm-9">
-				<div class="row">
-					<div class="col-xs-6 col-lg-4">
-						<h2> Heading</h2>
-						<p>
-							We study the question of feature sets for robust visual ob-
-							ject recognition, adopting linear SVM based human detec-
-							tion as a test case. After reviewing existing edge and gra-
-							dient based descriptors, we show experimentally that grids
-							of Histograms of Oriented Gradient (HOG) descriptors sig-
-							nificantly outperform existing feature sets for human detec-
-							tion. We study the influence of each stage of the computation
-							on performance, concluding that fine-scale gradients, fine
-							orientation binning, relatively coarse spatial binning, and
-							high-qualitylocal contrast normalization in overlapping de-
-							scriptor blocks are all important for good results. The new
-							approach gives near-perfect separation on the original MIT
-							pedestrian database, so we introduce a more challenging
-							dataset containing over 1800 annotated human images with
-							a large range of pose variations and backgrounds.
-						</p>
-						
-					</div>
-					<div class="col-xs-6 col-lg-4">
-						<h2> Heading</h2>
-						<p>
-							We study the question of feature sets for robust visual ob-
-							ject recognition, adopting linear SVM based human detec-
-							tion as a test case. After reviewing existing edge and gra-
-							dient based descriptors, we show experimentally that grids
-							of Histograms of Oriented Gradient (HOG) descriptors sig-
-							nificantly outperform existing feature sets for human detec-
-							tion. We study the influence of each stage of the computation
-							on performance, concluding that fine-scale gradients, fine
-							orientation binning, relatively coarse spatial binning, and
-							high-qualitylocal contrast normalization in overlapping de-
-							scriptor blocks are all important for good results. The new
-							approach gives near-perfect separation on the original MIT
-							pedestrian database, so we introduce a more challenging
-							dataset containing over 1800 annotated human images with
-							a large range of pose variations and backgrounds.
-						</p>
-						
-					</div>
-					<div class="col-xs-6 col-lg-4">
-						<h2> Heading</h2>
-						<p>
-							We study the question of feature sets for robust visual ob-
-							ject recognition, adopting linear SVM based human detec-
-							tion as a test case. After reviewing existing edge and gra-
-							dient based descriptors, we show experimentally that grids
-							of Histograms of Oriented Gradient (HOG) descriptors sig-
-							nificantly outperform existing feature sets for human detec-
-							tion. We study the influence of each stage of the computation
-							on performance, concluding that fine-scale gradients, fine
-							orientation binning, relatively coarse spatial binning, and
-							high-qualitylocal contrast normalization in overlapping de-
-							scriptor blocks are all important for good results. The new
-							approach gives near-perfect separation on the original MIT
-							pedestrian database, so we introduce a more challenging
-							dataset containing over 1800 annotated human images with
-							a large range of pose variations and backgrounds.
-						</p>
-						
-					</div>
-					<div class="col-xs-6 col-lg-4">
-						<h2> Heading</h2>
-						<p>
-							We study the question of feature sets for robust visual ob-
-							ject recognition, adopting linear SVM based human detec-
-							tion as a test case. After reviewing existing edge and gra-
-							dient based descriptors, we show experimentally that grids
-							of Histograms of Oriented Gradient (HOG) descriptors sig-
-							nificantly outperform existing feature sets for human detec-
-							tion. We study the influence of each stage of the computation
-							on performance, concluding that fine-scale gradients, fine
-							orientation binning, relatively coarse spatial binning, and
-							high-qualitylocal contrast normalization in overlapping de-
-							scriptor blocks are all important for good results. The new
-							approach gives near-perfect separation on the original MIT
-							pedestrian database, so we introduce a more challenging
-							dataset containing over 1800 annotated human images with
-							a large range of pose variations and backgrounds.
-						</p>
-						
-					</div>
-					<div class="col-xs-6 col-lg-4">
-						<h2> Heading</h2>
-						<p>
-							We study the question of feature sets for robust visual ob-
-							ject recognition, adopting linear SVM based human detec-
-							tion as a test case. After reviewing existing edge and gra-
-							dient based descriptors, we show experimentally that grids
-							of Histograms of Oriented Gradient (HOG) descriptors sig-
-							nificantly outperform existing feature sets for human detec-
-							tion. We study the influence of each stage of the computation
-							on performance, concluding that fine-scale gradients, fine
-							orientation binning, relatively coarse spatial binning, and
-							high-qualitylocal contrast normalization in overlapping de-
-							scriptor blocks are all important for good results. The new
-							approach gives near-perfect separation on the original MIT
-							pedestrian database, so we introduce a more challenging
-							dataset containing over 1800 annotated human images with
-							a large range of pose variations and backgrounds.
-						</p>
-						
-					</div>
-					<div class="col-xs-6 col-lg-4">
-						<h2> Heading</h2>
-						<p>
-							We study the question of feature sets for robust visual ob-
-							ject recognition, adopting linear SVM based human detec-
-							tion as a test case. After reviewing existing edge and gra-
-							dient based descriptors, we show experimentally that grids
-							of Histograms of Oriented Gradient (HOG) descriptors sig-
-							nificantly outperform existing feature sets for human detec-
-							tion. We study the influence of each stage of the computation
-							on performance, concluding that fine-scale gradients, fine
-							orientation binning, relatively coarse spatial binning, and
-							high-qualitylocal contrast normalization in overlapping de-
-							scriptor blocks are all important for good results. The new
-							approach gives near-perfect separation on the original MIT
-							pedestrian database, so we introduce a more challenging
-							dataset containing over 1800 annotated human images with
-							a large range of pose variations and backgrounds.
-						</p>
-						
-					</div>
-					
-				</div> <!-- row -->
+			<div class="row">
+			{% for post in learnwithpython_posts %}
+				<div class="col-xs-6 col-lg-6">
+				<h2> <a href="{{ url_for('LearnWithPython_post', name=post.path.replace('LearnWithPython/', '')) }}"> {{ post.title }} </a> </h2>
+				<hr>
+				<p> {{ post.description }} </p>
+
+
+				</div>
+
+			{% endfor %}
+			</div>
+
+			<div class="row">
+			{% for post in til_posts %}
+				<div class="col-xs-6 col-lg-6">
+				<h2> <a href="{{ url_for('TodayILearn_post', name=post.path.replace('TodayILearn/', '')) }}"> {{ post.title }} </a> </h2>
+				<hr>
+				<p> {{ 	post.description }} </p>
+
+
+				</div>
+
+			{% endfor%}
+			</div>
+			
+				
 
 		
-		
-			</div> <!--col-xs-12 col-sm-9 -->
-		{% endblock %}
+	{% endblock %}
 	</div> <!-- .container -->
-
 
     <footer class="footer">
       <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
+        <p class="text-muted">© 2016 LearningWithPython.com</p>
       </div>
     </footer>
 

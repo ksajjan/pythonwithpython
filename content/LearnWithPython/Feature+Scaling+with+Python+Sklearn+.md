@@ -1,6 +1,6 @@
 title: Feature Scaling with Python and Sklearn  
 date: 2016-12-22
-Tag: ['SkLearn','SKLearn']
+Tag: 'SkLearn'
 description : Sometime we have to pre-process our data before applying a machine learning algorithm. Below Methods can be used..
 keywords : scale(), MinMaxScale(), MaxAbsScaler(), custom data transformation with python, pre-processing of data python, sklearn data preprocessing, python normalization, Binarization using python.  
 author : Sajjan Kumar

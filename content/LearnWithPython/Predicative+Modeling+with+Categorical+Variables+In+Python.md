@@ -1,6 +1,6 @@
 title: Predicative Modeling with Categorical Variables in Python   
 date: 2016-12-01
-Tag: ['Machine Learning','SkLearn']
+Tag: 'Machine Learning'
 description : I am going to deal with Categorical data which can't be fitted into ML algorithm in their raw. These are some methods by which you can convert categorical data into numeric data.
 keywords : Dealing with Categorical Variable, Categorical Variable in Python, covert categorical variable into continuous,categorical value into numeric, sklearn LabelEncoder, Pandas get_dummies
 author : Sajjan Kumar

@@ -1,6 +1,6 @@
 title: A Simple Twitter User Behavior Analysis (with code)
 date: 2016-10-04
-Tag: ['Case Study','Project']
+Tag: 'Case Study'
 description : Some idea about what type of analysis can be done using Twitter data. A Interesting Project learn some twitter data analysis.
 keywords : twitter data analysis, things to do with twitter data, twitter data uses, user analysis using twitter , things to know with help of twitter data.
 author : Sajjan Kumar

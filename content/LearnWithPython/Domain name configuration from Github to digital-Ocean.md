@@ -1,6 +1,6 @@
 title : Domain name configuration from Github to digital-Ocean
 date : 2017-01-03
-Tag: ['Github','Configuration']
+Tag: 'Configuration'
 description : Let's Configure your domain (on Godaddy) on digitalOcean when you move from github. 
 keywords : Configure domain name on digital ocean, nameserver on Godaddy for digital Ocean, Moving from github to other hosting provider 
 author : Sajjan Kumar

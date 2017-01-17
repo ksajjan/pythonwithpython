@@ -1,6 +1,6 @@
 title: Machine Learning with Naive Bayes Classification
 date: 2016-11-26
-Tag: ['Machine Learning','SkLearn']
+Tag: 'Machine Learning'
 description : Changing the different Parameters of Naive Bayes Algorithm to Find the best pair of parameter.
 keywords : Naive Bayes Examples, Supervised learning example, machine learning, Naive Bayes classification
 author : Sajjan Kumar

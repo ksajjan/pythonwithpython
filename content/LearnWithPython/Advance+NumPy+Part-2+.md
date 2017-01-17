@@ -1,6 +1,6 @@
 title: Advance NumPy Part-II  
 date: 2016-12-17
-Tag: ['Numpy','Numpy']
+Tag: 'Numpy'
 description : NumPy stands for Numerical Python which provides a vast type of methods to deal with data. Some advance method used in Numpy are..
 keywords : Advance NumPy, NumPy universal funcation, ufunc, custom ufunc in python, Sorting, advance sorting python, argsort(),reduceat(),outer(),accumulate(),reduce(), Broadcasting Rule 
 author : Sajjan Kumar
